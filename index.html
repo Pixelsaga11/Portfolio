@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> PORTFOLIO | ABOUT ME </title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+}
+
+/* Navbar */
+nav {
+    position: fixed;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    padding: 15px 0;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffd369;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 2s ease-in-out;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero span {
+    color: #ffd369;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: #ffd369;
+    color: #333;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.btn:hover {
+    background: #fff;
+    transform: scale(1.1);
+}
+
+/* Sections */
+section {
+    padding: 80px 10%;
+    background: #fff;
+    color: #333;
+}
+
+section:nth-child(even) {
+    background: #f4f4f4;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Contact */
+.contact p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: #aaa;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+}
+</style>
+</head>  
+<body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+    <h1>Hello, I'm <span>Sagar Mane </span></h1>
+    <p>A Creative Web Developer & Designer</p>
+    <a href="#about" class="btn">Explore More</a>
+</div>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">
+        I am a passionate developer who loves creating modern, responsive, and animated websites.
+        I enjoy learning new technologies and building creative digital experiences.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>My Skills</h2>
+    <div class="cards">
+        <div class="card">HTML5</div>
+        <div class="card">CSS3</div>
+        <div class="card">JavaScript</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="cards">
+        <div class="card">Portfolio Website</div>
+        <div class="card">E-commerce Store</div>
+        <div class="card">Blog Platform</div>
+    </div>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <div class="cards">
+        <div class="card">B.TECH <br>
+            (Computer Science and Engineeering)</div>
+        <div class="card">SSC Grade : 92%</div>
+        <div class="card">HSC Grade : 60%</div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email:012345678@gmail.com </p>
+    <p>Phone:8876783846 </p>
+    <script type="module" src="https://unpkg.com/ionicons@7/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7/dist/ionicons/ionicons.js"></script>
+
+    <br><a href="https://instagram.com/sagar_mane_40" target="_blank"> 
+  <ion-icon name="logo-instagram" alt="Instagram" size="large"></ion-icon> 
+   <h4> Instagram </h4>
+</a> 
+
+
+<a href="https://linkedin.com/in/Sagar Mane" target="_blank">
+  <ion-icon name="logo-linkedin" alt="LinkedIn" size="large"></ion-icon>
+</a>
+  
+</section>
+
+<footer>
+    © 2026 PORTFOLIO | All Rights Reserved 
+   
+</footer>
+    
+</body>
+</html>
